@@ -55,7 +55,7 @@
     width: 100%;
 }
 .slider-frame{
-    width: 1347px;
+    width: 99,9vw;
     height: auto;
     overflow: hidden;
     
@@ -120,6 +120,12 @@ li .texto{
     font-size: 20px;
     text-align: center;
     padding: 40px;
+}
+
+.seccion__nosotros .nosotros__video video{
+    width: 600px;
+    height: 400px; 
+    padding: auto;
 }
 
 /***Servicios***/
@@ -272,4 +278,76 @@ li .texto{
     padding: 15px 10px;
     text-align: center;
     color: #3C3459;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .seccion__carrusel{
+        width: 100%;
+    }
+    .slider-frame{
+        width: 100vw;
+        height: auto;
+        overflow: hidden;
+        
+    }
+    
+    .seccion__servicios{
+        display: flex;
+        flex-direction: column;
+        padding-inline: 2rem;
+        padding-top: 3rem;
+
+    }
+
+    .grid__item{
+        flex: 1;
+    }
+
+    .grid__item1{
+        padding-bottom: 6rem;
+    }
+
+    .seccion__nosotros{
+        padding: 2rem;
+    }
+
+    .seccion__nosotros .nosotros__video video{
+        width: 500px;
+        height: 300px; 
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+
+    .seccion__nosotros{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .seccion__nosotros .nosotros__video video{
+        width: 500px;
+        height: 200px; 
+        margin: 10px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pie_pagina .grupo-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .pie_pagina .grupo-1 .box h2, p{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
